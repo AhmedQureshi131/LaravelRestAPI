@@ -22,7 +22,7 @@
 <body class="antialiased">
      <div>
      <?php
-         //Check the Database Connection
+
          if(DB::connection()->getPdo()){
              echo "Successfully Connected to DB and DB Name is ".DB::connection()->getDatabaseName();
          }
