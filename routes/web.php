@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TmdbmoviesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/dbconn', function () {
     return view('test_db');
 });
+
+Route::get('/fetch',[tmdbmoviesController::class,'fetchMovies']);
