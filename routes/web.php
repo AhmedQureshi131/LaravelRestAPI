@@ -23,3 +23,5 @@ Route::get('/dbconn', function () {
 });
 
 Route::get('/fetch',[tmdbmoviesController::class,'fetchMovies']);
+Route::get('/',[tmdbmoviesController::class,'showMovies']);
+Route::get('/edit/{id}',[tmdbmoviesController::class,'editMovies']);
