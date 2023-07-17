@@ -27,6 +27,7 @@ Route::get('/fetchData', function () {
 });
 
 Route::get('/fetch',[tmdbmoviesController::class,'fetchMovies']);
+Route::get('/fetchSWAPI',[tmdbmoviesController::class,'SwapiMovies']);
 Route::get('/',[tmdbmoviesController::class,'showMovies']);
 Route::get('/edit/{id}',[tmdbmoviesController::class,'editMovies']);
 Route::get('/update/{id}',[tmdbmoviesController::class,'updateMovies']);

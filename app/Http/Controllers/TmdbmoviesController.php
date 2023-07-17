@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Http;
 
 class TmdbmoviesController extends Controller
 {
-    //fetch the movies data from TMDB
+    //fetch TMDB movies data
     public function fetchMovies(){
         $response = Http::get('https://api.themoviedb.org/3/trending/movie/day',[
             'language'=>'en-US',
@@ -32,6 +32,26 @@ class TmdbmoviesController extends Controller
 
 
     }
+
+    //fetch SWAPI movies data
+    public function SwapiMovies(){
+        $response = Http::get('https://swapi.dev/api/starships/');
+        $moviesData=json_decode($response->body());
+
+        foreach ($moviesData->results as $m) {
+//            dump($m->title);
+            $tmdbMovies = new dbmovies();
+            $tmdbMovies['title'] = $m->name;
+            $tmdbMovies['description'] = $m->manufacturer;
+            $tmdbMovies->save();
+        }
+
+        return redirect('/')->with('status', "SWAPI Data fetched and saved in db");
+
+
+
+    }
+
     //Show the movies data
     public function showMovies(){
        $data['movies']=dbmovies::all();
