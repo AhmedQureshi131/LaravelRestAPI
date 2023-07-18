@@ -15,7 +15,7 @@
 
 <body>
 <h1 style="text-align: center">Star Wars Movies</h1>
-<center><a href="{{url('/fetchData')}}" class="btn btn-primary" style="text-align: center;margin-bottom: 5px" >Fetch Movies Data</a></center>
+<center><a href="{{url('/fetch')}}" class="btn btn-primary" style="text-align: center;margin-bottom: 5px" >Fetch Movies Data</a></center>
 @if (session('status'))
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong style="color: #000000">Hey! {{session('status')}}</strong>

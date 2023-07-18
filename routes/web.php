@@ -22,11 +22,11 @@ Route::get('/dbconn', function () {
     return view('test_db');
 });
 
-Route::get('/fetchData', function () {
+Route::get('/fetch', function () {
     return view('fetch');
 });
 
-Route::get('/fetch',[tmdbmoviesController::class,'fetchMovies']);
+Route::get('/fetchTMDB',[tmdbmoviesController::class,'TMDBMovies']);
 Route::get('/fetchSWAPI',[tmdbmoviesController::class,'SwapiMovies']);
 Route::get('/',[tmdbmoviesController::class,'showMovies']);
 Route::get('/edit/{id}',[tmdbmoviesController::class,'editMovies']);

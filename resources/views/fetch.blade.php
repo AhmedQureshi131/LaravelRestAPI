@@ -12,7 +12,7 @@
 
 <body>
 <h1 style="text-align: center;margin-top: 60px">Fetch Star Wars Movies Data</h1>
-<center><a href="{{url('/fetch')}}" class="btn btn-primary" style="text-align: center;margin-bottom: 5px" >Fetch TMDB Movies</a>
+<center><a href="{{url('/fetchTMDB')}}" class="btn btn-primary" style="text-align: center;margin-bottom: 5px" >Fetch TMDB Movies</a>
     <a href="{{url('/fetchSWAPI')}}" class="btn btn-primary" style="text-align: center;margin-bottom: 5px" >Fetch SWAPI Movies</a>
     <a href="{{url('/')}}" class="btn btn-danger" style="text-align: center;margin-bottom: 5px" >Go Back</a>
 </center>
