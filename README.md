@@ -31,4 +31,4 @@ Require Technologies:
    Server version: 10.4.14-MariaDB - PHPMYADMIN,
    Text Editor: PHPSTORM,
    Public Repository: Github,
-   Window 10.
+   Windows 10.
