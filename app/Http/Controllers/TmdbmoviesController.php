@@ -10,7 +10,7 @@ class TmdbmoviesController extends Controller
 {
     //fetch TMDB movies data
     public function TMDBMovies(){
-        //fetch data from API
+        //fetch data from TMDB API
         $response = Http::get('https://api.themoviedb.org/3/trending/movie/day',[
             'language'=>'en-US',
              'api_key'=>'0f7d52a8e7a69ab75f2699002f7ed225',
