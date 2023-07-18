@@ -1,4 +1,4 @@
-Setup Instructions For Laravel API Rest Base PHP Application
+Setup Instructions For Laravel API Rest Based PHP Application
 
 Clone Github Repository: https://github.com/AhmedQureshi131/LaravelRestAPI.git
 
