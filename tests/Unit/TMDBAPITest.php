@@ -9,7 +9,7 @@ use Tests\TestCase;
 class TMDBAPITest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * Test TMDB API
      *
      * @return void
      */

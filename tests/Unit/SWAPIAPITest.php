@@ -8,7 +8,7 @@ use Tests\TestCase;
 class SWAPIAPITest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * Test SWAPI API
      *
      * @return void
      */

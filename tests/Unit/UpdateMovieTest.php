@@ -8,7 +8,7 @@ use Tests\TestCase;
 class UpdateMovieTest extends TestCase
 {
     /**
-     * A basic unit test example.
+     * Update Movie Data
      *
      * @return void
      */
